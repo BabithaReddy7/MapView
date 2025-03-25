@@ -13,7 +13,7 @@ const LoginPage = () => {
     
     try {
       const response = await axios.post('https://mapview-backend.onrender.com/api/auth/login', {
-        username,
+        email:username,
         password,
       });
 
